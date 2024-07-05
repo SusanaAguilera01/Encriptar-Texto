@@ -1,0 +1,344 @@
+/* Letra y fondo*/
+body{
+    background-color: #D7BDE2;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.icono{
+    width: 4%;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+/* Campo de texto */
+.campo_texto{
+    display: flex;
+    padding-bottom: 50px;    
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+
+.textarea{
+    background-color: #D7BDE2;
+    outline: none; /* Quitar borde al text area*/
+    width: 85%;
+    height: 300px;
+}   
+
+#mensagem{
+    font-size: 22px;
+}
+
+/* Texto advert */
+.advertencia{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+    padding: 0px 0 10px 30px;
+}
+
+.inf_icon{
+    height: 22px;
+}
+
+.inf_text{
+    font-size: 12px;
+}
+
+/* Botón encriptar y desencriptar */
+.botones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 30px;
+}   
+
+.but_encriptar{
+    height: 60px;
+    width: 70%;
+    font-size: 15px;
+    background-color: #8E44AD;
+    border-radius: 10px;
+    color: white;
+}   
+
+.but_desencriptar{
+    height: 60px;
+    width: 70%;
+    font-size: 15px;
+    background-color: #C39BD3;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #8E44AD;
+}
+
+/* Cuadro de resultado */
+.text_resultado{
+    display: flex;
+    flex-direction: column;
+    margin: 0   auto;
+    background-color: white;
+    width: 85%;
+    height: 250px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 9px 1px grey;
+}
+.text_resultado .mensaje_error{
+    margin: 10% auto;
+}
+
+.text_encrip{
+    padding: 35px 0 0 30px;
+    font-size: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    word-wrap: break-word;
+    overflow: auto;
+}
+
+#text_resul{        
+    width: 90%;
+    height: 95%;
+    outline: none;
+}
+
+#figura{
+    display: none;
+}
+
+.mensaje_error{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    top: 65%;
+}
+
+.text_resultado h2{
+    font-size: 20px;
+    font-weight: bold;
+    color: #8E44AD;
+    padding-bottom: 15px;
+}
+
+.text_sec{
+    font-size: 16px;
+} 
+
+/* Boton copiar */
+.butt_copy{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.but_copiar{
+    display: none;
+    margin: auto;
+    right: 15%;
+    height: 50px;
+    width: 40%;
+    font-size: 15px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #8E44AD;
+}
+
+/* Tablet */
+@media (min-width:768px){
+    /*Icono*/
+    .icono{
+        width: 2%;
+        padding-top: 40px;
+        padding-left: 50px;
+    }
+
+    .text_resultado .mensaje_error{
+        margin: 7.5% auto;
+    }
+
+    /* Campo de texto */
+    .textarea{
+        font-size: 32px;
+    }   
+
+    /* Botón encriptar y desencriptar */
+    .botones{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }  
+
+    .but_encriptar{
+        height: 60px;
+        width: 40%;
+    }   
+    
+    .but_desencriptar{
+        height: 60px;
+        width: 40%;
+    }
+}
+
+/* Desktop */
+@media (min-width:1440px) {
+    .icono{
+        width: 2%;
+        padding-top: 40px;
+        padding-left: 50px;
+    }
+
+    /* Campo de texto */
+    .campo_texto{
+        padding: 0px 0 50px 200px;    
+    }
+
+    .textarea{
+        background-color: #D7BDE2;
+        width: 50%;
+        height: 60%;
+        top: 15%;
+        font-size: 32px;
+    }
+
+    /* Texto advert */
+    .advertencia{
+        position: absolute;
+        top: 85%;
+        left: 12%;
+        gap: 5px;
+    }
+
+    .inf_icon{
+        height: 22px;
+    }
+
+    .inf_text{
+        font-size: 16px;
+    }
+
+    /* Botón encriptar y desencriptar */
+    .botones{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 90%;
+        left: 12%;
+        gap: 50px;
+    }   
+
+    .but_encriptar{
+        height: 60px;
+        width: 310px;
+        font-size: 18px;
+        border-radius: 10px;
+        cursor: pointer;
+    }   
+
+    .but_desencriptar{
+        height: 60px;
+        width: 310px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .but_encriptar:hover,
+    .but_desencriptar:hover{
+        opacity: 0.7;   
+    }
+
+    /* Cuadro de resultado */
+    .text_resultado{
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        height: 80%;
+        position: absolute;
+        right: 7%;
+        top: 10%;
+        border-radius: 30px;
+        box-shadow: 0px 0px 9px 1px rgb(175, 172, 172);
+    } 
+
+    #text_resul{        
+        width: 90%;
+    }
+    
+    .text_encrip{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        word-wrap: break-word;
+        font-size: 30px;
+    }
+
+    #figura{
+        display: flex;
+        position: absolute;
+        top: 30%;
+        left: 20%;
+        width: 60%;
+    }   
+
+    .mensaje_error{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        right: 10%;
+        left: 10%;
+        top: 65%;
+    }
+
+    .text_resultado h2{
+        font-size: 25px;
+        font-weight: bold;
+        color: #8E44AD;
+        padding-bottom: 15px;
+    }
+
+    .text_sec{
+        font-size: 18px;
+        padding-bottom: 50px;
+    }
+
+    .text_resultado button{
+        margin: 0 auto;
+    }
+
+    /* Botón copiar*/
+    .but_copiar{
+        display: none;
+        position: absolute;
+        bottom:2%;
+        right: 15%;
+        height: 50px;
+        width: 10%;
+        font-size: 15px;
+        background-color: white;
+        border-radius: 10px;
+        color: black;
+        font-weight: bold;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #8E44AD;
+        cursor: pointer;
+    }
+
+    .but_copiar{
+        opacity: 1.7;   
+    }
+    
+}
